@@ -1,0 +1,27 @@
+ Queue (RRA, BK ATM, Nyabugogo Buses)
+
+Behavior: First Come, First Served (FCFS)
+
+In the code:
+
+ - At RRA, people1 is added first, so when we call serve_two(), people1 and people2 are served before anyone else.
+
+ - At BK ATM, when six clients line up, the one who joined first is guaranteed to be served first. Even the third_served() method reflects the order in which people arrive.
+
+ - At Nyabugogo buses, the circular queue ensures that buses take turns in the same order they came in (Bus 1 goes first, then Bus 2, etc.).
+
+This matches real-life queues: in a bank, a bus park, or at the RRA office, people (or buses) expect fairness — whoever comes first gets served first.
+
+Stack (if we used it instead)
+
+Behavior: Last In, First Out (LIFO)
+
+Imagine replacing our queues with a stack:
+
+ - At RRA, if people5 entered last, they would be served before people1.
+
+ - At BK ATM, the last client would be served first, which would cause chaos and complaints.
+
+At Nyabugogo, the last bus to arrive would leave first, making earlier buses wait endlessly.
+
+Stacks are useful in contexts like undo operations or backtracking, but they are not fair for serving clients.
