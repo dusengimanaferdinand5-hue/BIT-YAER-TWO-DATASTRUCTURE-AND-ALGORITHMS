@@ -20,3 +20,4 @@ This makes stack a natural model because:
 
  So in summary:
 A stack is a history keeper. It grows as you perform actions and shrinks as you undo them. Its LIFO nature mirrors the logic of undo, where the most recent action is the first candidate for reversal.
+
